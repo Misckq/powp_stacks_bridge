@@ -4,6 +4,7 @@ public class StackList {
 
     Node last;
     int i;
+    private static final int EMPTY_STACK_VALUE = -1;
 
     public void pushElement(int i) {
         if (last == null) {
@@ -25,14 +26,14 @@ public class StackList {
 
     public int peek() {
         if (empty()) {
-            return -1;
+            return EMPTY_STACK_VALUE;
         }
         return last.value;
     }
 
     public int pop() {
         if (empty()) {
-            return -1;
+            return EMPTY_STACK_VALUE;
         }
         int ret = last.value;
         last = last.prev;
