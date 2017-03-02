@@ -6,6 +6,7 @@ import edu.kis.vh.stacks.factory.DefaultStacksFactory;
 
 class StacksDemo {
 // wszystkie wiersze w klasie byly zle zformatowane
+// alt + -> powoduje przejscie do innego otwartego pliku
 
     public static void main(String[] args) {
         DefaultStacksFactory factory = new DefaultStacksFactory();
