@@ -6,7 +6,7 @@ import org.junit.Test;
 import edu.kis.vh.stacks.stack;
 
 public class stackTest {
-	
+
     @Test
     public void testPush() {
         stack stackObj = new stack();
@@ -20,7 +20,7 @@ public class stackTest {
     @Test
     public void testIsEmpty() {
         stack stackObj = new stack();
-        boolean result = stackObj.isEmpty();		
+        boolean result = stackObj.isEmpty();
         Assert.assertEquals(true, result);
 
         stackObj.push(888);
@@ -34,7 +34,7 @@ public class stackTest {
         stack stackObj = new stack();
         final int STACK_CAPACITY = 12;
         for (int i = 0; i < STACK_CAPACITY; i++) {
-            boolean result = stackObj.isFull();		
+            boolean result = stackObj.isFull();
             Assert.assertEquals(false, result);
             stackObj.push(888);
         }
