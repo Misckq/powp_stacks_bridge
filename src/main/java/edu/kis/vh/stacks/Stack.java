@@ -1,10 +1,10 @@
 package edu.kis.vh.stacks;
 
-public class stack {
+public class Stack {
 
     private int[] ITEMS = new int[12];
 
-    public int total = -1;
+    private int total = -1;
 
     public void push(int i) {
         if (!isFull()) {
@@ -33,5 +33,13 @@ public class stack {
         }
         return ITEMS[total--];
     }
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
 
 }
