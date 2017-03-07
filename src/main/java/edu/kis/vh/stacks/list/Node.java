@@ -2,7 +2,7 @@ package edu.kis.vh.stacks.list;
 
 public class Node {
 //zmieniono pole value, prev, next na private oraz dodano metody
-    private int value;
+    private final int value;
     private Node prev;
 	private Node next;
 

@@ -2,8 +2,7 @@ package edu.kis.vh.stacks;
 
 public class Stack {
 
-    private int[] ITEMS = new int[12];
-
+    private final int[] ITEMS = new int[12];
     private int total = -1;
 
     public void push(int i) {
