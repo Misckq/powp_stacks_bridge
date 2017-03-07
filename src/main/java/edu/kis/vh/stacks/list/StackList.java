@@ -2,8 +2,8 @@ package edu.kis.vh.stacks.list;
 
 public class StackList {
 
-    Node last;
-    int i;
+    private Node last;
+    public int i;
     private static final int EMPTY_STACK_VALUE = -1;
 
     public void pushElement(int i) {
