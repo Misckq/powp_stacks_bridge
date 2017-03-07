@@ -27,19 +27,15 @@ public class Stack {
         return ITEMS[total];
     }
 
-    public int pop() {
+    public int getTotal() {
+		return total;
+	}
+
+	public int pop() {
         if (isEmpty()) {
             return -1;
         }
         return ITEMS[total--];
     }
-
-	public int getTotal() {
-		return total;
-	}
-
-	public void setTotal(int total) {
-		this.total = total;
-	}
 
 }
