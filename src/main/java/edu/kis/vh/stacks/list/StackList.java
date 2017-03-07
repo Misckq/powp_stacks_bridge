@@ -44,6 +44,4 @@ public class StackList {
 		return i;
 	}
 
-
-
 }
