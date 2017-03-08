@@ -1,6 +1,6 @@
 package edu.kis.vh.stacks.list;
 
-public class StackList {
+class StackList {
 //zmieniono pole i
     private Node last;
     private int i;
@@ -43,5 +43,38 @@ public class StackList {
 	public int getI() {
 		return i;
 	}
+	
+}
+
+class Node {
+	//zmieniono pole value, prev, next na private oraz dodano metody
+    protected final int value;
+    protected Node prev;
+    protected Node next;
+
+    public Node(int i) {
+        value = i;
+    }
+
+	public int getValue() {
+		return value;
+	}
+
+	public Node getNext() {
+		return next;
+	}
+
+	public void setNext(Node next) {
+		this.next = next;
+	}
+
+	public Node getPrev() {
+		return prev;
+	}
+
+	public void setPrev(Node prev) {
+		this.prev = prev;
+	}
 
 }
+
