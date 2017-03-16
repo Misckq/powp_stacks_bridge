@@ -9,7 +9,7 @@ package edu.kis.vh.stacks;
 
 public class StackFIFO extends Stack {
 
-    private final Stack temp = new Stack();
+    private final IStack temp = new Stack();
 
     /* (non-Javadoc)
      * @see edu.kis.vh.stacks.Stack#pop()
