@@ -22,7 +22,7 @@ public class StackList {
     }
 
     public boolean isFull() {
-        return false;
+        return true;
     }
 
     public int top() {

@@ -3,6 +3,7 @@ import edu.kis.vh.stacks.list.StackList;
 
 public class Stack implements IStack {
 	private StackList stack;
+	//nie doszlo do istotnych zmian
 	
 	public Stack() {
 		this.stack = new StackList();
