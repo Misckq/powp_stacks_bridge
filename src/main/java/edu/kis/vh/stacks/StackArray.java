@@ -7,7 +7,7 @@ public class StackArray {
     
     private final int[] ITEMS = new int[SIZE];
     private int total = EMPTY_STACK_VALUE;
-
+    
     public void push(int i) {
         if (!isFull()) {
             ITEMS[++total] = i;

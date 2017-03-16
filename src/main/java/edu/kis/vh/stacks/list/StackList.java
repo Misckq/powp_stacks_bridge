@@ -1,12 +1,13 @@
 package edu.kis.vh.stacks.list;
 
-class StackList {
+public class StackList {
 //zmieniono pole i
     private Node last;
     private int i;
     private static final int EMPTY_STACK_VALUE = -1;
+    private int total = EMPTY_STACK_VALUE;
 
-    public void pushElement(int i) {
+    public void push(int i) {
         if (last == null) {
             last = new Node(i);
         } else {
@@ -16,23 +17,23 @@ class StackList {
         }
     }
 
-    public boolean empty() {
+    public boolean isEmpty() {
         return last == null;
     }
 
-    public boolean full() {
+    public boolean isFull() {
         return false;
     }
 
-    public int peek() {
-        if (empty()) {
+    public int top() {
+        if (isEmpty()) {
             return EMPTY_STACK_VALUE;
         }
         return last.getValue();
     }
 
     public int pop() {
-        if (empty()) {
+        if (isEmpty()) {
             return EMPTY_STACK_VALUE;
         }
         int ret = last.getValue();
@@ -42,6 +43,10 @@ class StackList {
 
 	public int getI() {
 		return i;
+	}
+	
+    public int getTotal() {
+		return total;
 	}
 	
 }
