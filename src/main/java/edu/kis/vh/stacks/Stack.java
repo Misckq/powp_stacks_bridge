@@ -1,5 +1,5 @@
 package edu.kis.vh.stacks;
-import edu.kis.vh.stacks.list.StackList;
+import edu.kis.vh.stacks.list_array.StackList;
 
 public class Stack implements IStack {
 	private StackList stack;
