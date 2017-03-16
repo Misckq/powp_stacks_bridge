@@ -1,44 +1,43 @@
 package edu.kis.vh.stacks;
 
 public class Stack {
+	private StackArray StackArray;
 	
-    private static final int EMPTY_STACK_VALUE = -1;
-    private static final int SIZE = 12;
-    
-    private final int[] ITEMS = new int[SIZE];
-    private int total = EMPTY_STACK_VALUE;
+	public Stack() {
+		this.StackArray = new StackArray();
+	}
+	
+	
+	public Stack(edu.kis.vh.stacks.StackArray stackArray) {
+		super();
+		StackArray = stackArray;
+	}
+	
 
+	public void push(int i) {
+		StackArray.push(i);
+	}
 
-    public void push(int i) {
-        if (!isFull()) {
-            ITEMS[++total] = i;
-        }
-    }
+	public boolean isEmpty() {
+		return StackArray.isEmpty();
+	}
 
-    public boolean isEmpty() {
-        return total == -1;
-    }
+	public boolean isFull() {
+		return StackArray.isFull();
+	}
 
-    public boolean isFull() {
-        return total == 11;
-    }
+	public int top() {
+		return StackArray.top();
+	}
 
-    public int top() {
-        if (isEmpty()) {
-            return -1;
-        }
-        return ITEMS[total];
-    }
-
-    public int getTotal() {
-		return total;
+	public int getTotal() {
+		return StackArray.getTotal();
 	}
 
 	public int pop() {
-        if (isEmpty()) {
-            return -1;
-        }
-        return ITEMS[total--];
-    }
+		return StackArray.pop();
+	}
 
+
+  
 }
