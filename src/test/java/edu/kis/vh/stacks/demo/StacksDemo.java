@@ -2,7 +2,10 @@ package edu.kis.vh.stacks.demo;
 
 import edu.kis.vh.stacks.IStack;
 import edu.kis.vh.stacks.StackHanoi;
+import edu.kis.vh.stacks.factory.ArrayStacksFactory;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
+import edu.kis.vh.stacks.factory.IStacksFactory;
+import edu.kis.vh.stacks.factory.ListStacksFactory;
 
 class StacksDemo {
 // wszystkie wiersze w klasie byly zle zformatowane
@@ -10,11 +13,15 @@ class StacksDemo {
 
     public static void main(String[] args) {
         DefaultStacksFactory factory = new DefaultStacksFactory();
+        ArrayStacksFactory afactory = new ArrayStacksFactory();
+        ListStacksFactory  lfactory = new ListStacksFactory ();
         testStack(factory);
+        testStack(afactory);
+        testStack(lfactory);
 
     }
     
-    public static void testStack(DefaultStacksFactory factory) {
+    public static void testStack(IStacksFactory  factory) {
         IStack[] stacks = {factory.GetStandardStack(), factory.GetFalseStack(),
             factory.GetFIFOStack(), factory.GetHanoiStack()};
 
