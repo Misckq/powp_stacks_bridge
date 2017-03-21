@@ -16,7 +16,7 @@ public class StackArray implements IStack {
     }
 
     public boolean isEmpty() {
-        return total == -1;
+        return total == EMPTY_STACK_VALUE;
     }
 
     public boolean isFull() {
@@ -25,7 +25,7 @@ public class StackArray implements IStack {
 
     public int top() {
         if (isEmpty()) {
-            return -1;
+            return EMPTY_STACK_VALUE;
         }
         return ITEMS[total];
     }
@@ -36,7 +36,7 @@ public class StackArray implements IStack {
 
 	public int pop() {
         if (isEmpty()) {
-            return -1;
+            return EMPTY_STACK_VALUE;
         }
         return ITEMS[total--];
     }
