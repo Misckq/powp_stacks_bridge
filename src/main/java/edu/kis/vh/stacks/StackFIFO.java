@@ -10,8 +10,9 @@ import edu.kis.vh.stacks.list_array.StackList;
  */
 
 public class StackFIFO extends Stack {
+	//lepszy bedzie StackList poniewaz nie bedzie limitu liczby elementu
 
-    private final IStack temp = new Stack();
+	private Stack temp = new Stack(new StackList());
 
     public StackFIFO() {
 		super();
