@@ -10,6 +10,9 @@ import edu.kis.vh.stacks.factory.ListStacksFactory;
 class StacksDemo {
 // wszystkie wiersze w klasie byly zle zformatowane
 // alt + -> powoduje przejscie do innego otwartego pliku
+	
+// klasy fabryk lamia zasade izolacji, poniewaz od implementacji 
+// StackArray oraz StackList zalezy jaka abstakcje stosow dostaniemy
 
     public static void main(String[] args) {
         DefaultStacksFactory factory = new DefaultStacksFactory();
