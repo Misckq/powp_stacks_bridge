@@ -1,10 +1,11 @@
 package edu.kis.vh.stacks.list_array;
 
-public class StackList {
+import edu.kis.vh.stacks.IStack;
+
+public class StackList implements IStack {
 //zmieniono pole i
     private Node last;
     private int i;
-    private static final int EMPTY_STACK_VALUE = -1;
     private int total = EMPTY_STACK_VALUE;
 
     public void push(int i) {

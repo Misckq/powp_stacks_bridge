@@ -1,8 +1,9 @@
 package edu.kis.vh.stacks.list_array;
 
-public class StackArray {
+import edu.kis.vh.stacks.IStack;
+
+public class StackArray implements IStack {
 	
-    private static final int EMPTY_STACK_VALUE = -1;
     private static final int SIZE = 12;
     
     private final int[] ITEMS = new int[SIZE];

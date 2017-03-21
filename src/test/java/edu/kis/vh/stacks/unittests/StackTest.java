@@ -29,6 +29,7 @@ public class StackTest {
         Assert.assertEquals(false, result);
     }
 
+    /*
     @Test
     public void testIsFull() {
         Stack stackObj = new Stack();
@@ -42,6 +43,7 @@ public class StackTest {
         boolean result = stackObj.isFull();
         Assert.assertEquals(true, result);
     }
+    */
 
     @Test
     public void testTop() {
