@@ -1,5 +1,7 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.list_array.StackList;
+
 /**
  * Klasa reprezentuje stos First In, First Out, dane sa obsługiwane w takiej kolejności, w jakiej zostały dostarczone
  * 
@@ -11,7 +13,17 @@ public class StackFIFO extends Stack {
 
     private final IStack temp = new Stack();
 
-    /* (non-Javadoc)
+    public StackFIFO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public StackFIFO(StackList StackList) {
+		super(StackList);
+		// TODO Auto-generated constructor stub
+	}
+
+	/* (non-Javadoc)
      * @see edu.kis.vh.stacks.Stack#pop()
      * @return obiekt typu int, ktory zostal sciagniety ze stosu
      */
