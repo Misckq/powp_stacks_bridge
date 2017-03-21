@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import edu.kis.vh.stacks.Stack;
+import edu.kis.vh.stacks.factory.ArrayStacksFactory;
+
 
 public class StackTest {
 
@@ -29,21 +31,22 @@ public class StackTest {
         Assert.assertEquals(false, result);
     }
 
-    /*
+    
     @Test
     public void testIsFull() {
-        Stack stackObj = new Stack();
-        final int STACK_CAPACITY = 12;
+    	ArrayStacksFactory arrayStacksFactory = new ArrayStacksFactory();
+    	Stack stackObj = arrayStacksFactory.GetStandardStack();
+        final int STACK_CAPACITY = 11;
         for (int i = 0; i < STACK_CAPACITY; i++) {
             boolean result = stackObj.isFull();
             Assert.assertEquals(false, result);
             stackObj.push(888);
         }
-
         boolean result = stackObj.isFull();
         Assert.assertEquals(true, result);
+        //zmienono test poniewaz domyslnie testowal stos StackList
     }
-    */
+    
 
     @Test
     public void testTop() {

@@ -5,9 +5,11 @@ import edu.kis.vh.stacks.IStack;
 public class StackArray implements IStack {
 	
     private static final int SIZE = 12;
+    private static final int FULL_STACK = 11;
     
     private final int[] ITEMS = new int[SIZE];
     private int total = EMPTY_STACK_VALUE;
+    
     
     public void push(int i) {
         if (!isFull()) {
@@ -20,7 +22,7 @@ public class StackArray implements IStack {
     }
 
     public boolean isFull() {
-        return total == 11;
+        return total == FULL_STACK;
     }
 
     public int top() {
