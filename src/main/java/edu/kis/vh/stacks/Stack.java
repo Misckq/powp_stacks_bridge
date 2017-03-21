@@ -1,8 +1,9 @@
 package edu.kis.vh.stacks;
+import edu.kis.vh.stacks.list_array.StackArray;
 import edu.kis.vh.stacks.list_array.StackList;
 
 public class Stack implements IStack {
-	private StackList stack;
+	private IStack stack;
 	//nie doszlo do istotnych zmian
 	
 	//F3 otwiera metode w interfejsie
@@ -19,6 +20,10 @@ public class Stack implements IStack {
 		stack = StackList;
 	}
 	
+	public Stack(StackArray StackArray) {
+		super();
+		stack = StackArray;
+	}
 
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.stacks.IStack#push(int)

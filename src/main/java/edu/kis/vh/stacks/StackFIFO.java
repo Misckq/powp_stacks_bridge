@@ -1,5 +1,6 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.list_array.StackArray;
 import edu.kis.vh.stacks.list_array.StackList;
 
 /**
@@ -10,7 +11,7 @@ import edu.kis.vh.stacks.list_array.StackList;
  */
 
 public class StackFIFO extends Stack {
-	//lepszy bedzie StackList poniewaz nie bedzie limitu liczby elementu
+	//lepszy bedzie StackList poniewaz nie bedzie limitu liczby elementu 
 
 	private Stack temp = new Stack(new StackList());
 
@@ -21,6 +22,11 @@ public class StackFIFO extends Stack {
 
 	public StackFIFO(StackList StackList) {
 		super(StackList);
+		// TODO Auto-generated constructor stub
+	}
+
+	public StackFIFO(StackArray StackArray) {
+		super(StackArray);
 		// TODO Auto-generated constructor stub
 	}
 
