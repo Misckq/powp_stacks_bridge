@@ -5,6 +5,10 @@ public class Stack implements IStack {
 	private StackList stack;
 	//nie doszlo do istotnych zmian
 	
+	//F3 otwiera metode w interfejsie
+	//CTR+T wyswietla interfejsy oraz klasy implementujace metody
+	//CTR+kursor umozliwia otwarcie miejsca deklaracji lub implementacji metody
+	
 	public Stack() {
 		this.stack = new StackList();
 	}
